@@ -23,7 +23,17 @@ def sum_list(numbers: list) -> int:
         answer += char
     return answer
     
-    
+
+'''another way to answer it'''    
+'''
+output = 0
+idx = 0 
+while index < len(numbers):
+    curr_num = numbers[idx]
+    output = output + curr_num
+    idx += 1
+return output
+'''
 
 
 '''count_letter'''
@@ -52,6 +62,20 @@ def count_letter(s: str, letter: str) -> int:
 
 
 
+'''another solution'''
+'''
+count = 0
+idx = 0 
+while idx < len(s):    #hello
+    curr_lettter = s[idx]
+    if curr_letter == letter =
+        count += 1
+return count
+
+'''
+
+
+
 
 
 ''' Extra Credit Challenge'''
@@ -71,14 +95,17 @@ def count_letter(s: str, letter: str) -> int:
 #
 def is_palindrome(s: str) -> bool:
     check = True
-    answer = ""
+    reverse_s = ""
     Ranser = ""
     index = len(s) - 1 
-    while index >= 0:
-        answer += s[index]     #add the final number of the string from the list
-        index -= 1      #make the list smaller and loop it until you reach the first letter/ number
-    if answer == Ranser:
-        check = False
-    return check
 
-    pass
+
+    while index >= 0:
+        char = s[index]
+        reverse_s = reverse_s + char
+        index -= 1      #make the list smaller and loop it until you reach the first letter/ number
+    if reverse_s == s:
+        return True
+    else: 
+        return False
+    return check
